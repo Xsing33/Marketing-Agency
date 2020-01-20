@@ -139,3 +139,82 @@ WELCOME SECTION
 .welcome-btn:hover {
   color: rgb(197, 179, 88);
 }
+
+/* ##########
+#############
+SERVICES
+#############
+############# */
+
+.services {
+  height: 900px;
+  background-image: url("img/Zakim-Bridge-Boston.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+.services-header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+  height: 90px;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.services-parent-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  width: 90%;
+  height: 750px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 85%;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.services h2 {
+  font-size: 2rem;
+  color: rgb(197, 179, 88);
+}
+
+.services h3 {
+  color: rgb(197, 179, 88);
+  border-bottom: 3px solid white;
+}
+.services p {
+  color: #ffffff;
+}
+
+/* ###########
+##############
+WHY SECTION
+###############
+################ */
+.why-section {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+}
+
+.why-section-header {
+  color: rgb(197, 179, 88);
+}
+
+.why-section-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
