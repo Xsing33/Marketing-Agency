@@ -23,6 +23,11 @@ li {
 }
 a {
   text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
 }
 
 /* #############
@@ -58,8 +63,10 @@ HERO SECTION
 ################## */
 
 .hero {
+  z-index: -99;
+  position: relative;
   height: 100vh;
-  background-image: url("img/Boston-Skyline-Boston-Media-Agency-min.jpg");
+  background-image: url("Boston-Skyline-Boston-Media-Agency-min.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -73,13 +80,13 @@ HERO SECTION
 
 .hero h1 {
   font-size: 7rem;
-  font-weight: lighter;
+  font-weight: 400;
   color: white;
 }
 
 .hero p {
   font-size: 2rem;
-  font-weight: lighter;
+  font-weight: 400;
   color: white;
 }
 .hero-btn {
@@ -92,10 +99,16 @@ HERO SECTION
   border: 1px solid #ffffff;
 }
 
-.cta-hero:hover {
+.hero-btn:hover {
   transition: all 300ms ease-in-out;
   border: 1px solid rgb(197, 179, 88);
   color: rgb(197, 179, 88);
+}
+
+.hero-content-container {
+  position: fixed;
+  top: 200px;
+  z-index: -99;
 }
 
 /* ###########
@@ -148,7 +161,7 @@ SERVICES
 
 .services {
   height: 900px;
-  background-image: url("img/Zakim-Bridge-Boston.jpg");
+  background-image: url("Zakim-Bridge-Boston.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -161,6 +174,7 @@ SERVICES
   height: 90px;
   width: 80%;
   background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
 }
 
 .services-parent-container {
@@ -183,6 +197,8 @@ SERVICES
   width: 85%;
   height: 500px;
   background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  padding: 1rem;
 }
 
 .services h2 {
@@ -204,17 +220,140 @@ WHY SECTION
 ###############
 ################ */
 .why-section {
+  padding: 2rem;
   background-color: black;
-  height: 100vh;
+  height: 100%;
   width: 100%;
 }
 
 .why-section-header {
+  font-size: 2rem;
+  margin-bottom: 2rem;
   color: rgb(197, 179, 88);
+  text-align: center;
 }
 
 .why-section-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.why-section p {
+  font-size: 0.9rem;
+  color: white;
+  margin: 2rem;
+}
+.why-section h4 {
+  font-size: 1.5rem;
+  color: rgb(197, 179, 88);
+}
+
+.why-section-grid-containers {
+  position: relative;
+  width: 370px;
+}
+
+.why-section-grid-containers i {
+  padding-right: 1rem;
+  color: rgb(197, 179, 88);
+}
+
+.why-section-grid-containers img {
+  position: absolute;
+  top: 30px;
+  left: -60px;
+}
+
+/* #############
+#############3
+ACHIEVE CTA DIV 
+##############
+3############ */
+.achieve-cta {
+  height: 120px;
+  background-color: black;
+  position: relative;
+  text-align: start;
+  padding: 0 5rem;
+}
+
+.achieve-cta h2 {
+  font-size: 2.5rem;
+  color: rgb(197, 179, 88);
+}
+
+.achieve-cta p {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.achieve-cta button {
+  cursor: pointer;
+  position: absolute;
+  right: 2rem;
+  top: 0;
+  font-size: 2rem;
+  font-weight: lighter;
+  padding: 15px 30px;
+
+  color: rgb(197, 179, 88);
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgb(197, 179, 88);
+}
+
+.achieve-cta button:hover {
+  color: white;
+  border: 1px solid white;
+  background-color: 0, 0, 0, 0.5;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer img {
+}
+
+.footer-ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-ul a {
+  color: white;
+}
+
+.footer-ul a:hover {
+  color: rgb(197, 179, 88);
+}
+
+.footer-about-us-info {
+  cursor: pointer;
+}
+
+.footer-about-us-info p {
+  color: white;
+}
+
+.footer-about-us-info i {
+  color: rgb(197, 179, 88);
+}
+
+.social-media-icons {
+  margin: 2rem;
+  padding: 2rem;
+  cursor: pointer;
+  color: rgb(197, 179, 88);
+}
+
+.social-media-icons:hover {
+  color: rgb(170, 154, 74);
 }
