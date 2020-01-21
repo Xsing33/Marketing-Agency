@@ -30,6 +30,18 @@ button {
   cursor: pointer;
 }
 
+/* ###########
+##############
+VARIABLES
+##############
+############## */
+
+:root {
+  --primary-color: rgb(197, 179, 88);
+  --light-color: white;
+  --dark-bg-color: black;
+}
+
 /* #############
 ###############
 NAV STYLES
@@ -48,12 +60,12 @@ ul {
 }
 
 a {
-  color: white;
+  color: var(--light-color);
   padding: 0 3rem;
 }
 
 a:hover {
-  color: rgb(197, 179, 88);
+  color: var(--primary-color);
 }
 
 /* ###############
@@ -81,28 +93,28 @@ HERO SECTION
 .hero h1 {
   font-size: 7rem;
   font-weight: 400;
-  color: white;
+  color: var(--light-color);
 }
 
 .hero p {
   font-size: 2rem;
   font-weight: 400;
-  color: white;
+  color: var(--light-color);
 }
 .hero-btn {
   font-size: 2rem;
   font-weight: lighter;
   padding: 15px 30px;
   margin-top: 2rem;
-  color: white;
+  color: var(--light-color);
   background-color: rgba(0, 0, 0, 0);
-  border: 1px solid #ffffff;
+  border: 1px solid var(--light-color);
 }
 
 .hero-btn:hover {
   transition: all 300ms ease-in-out;
-  border: 1px solid rgb(197, 179, 88);
-  color: rgb(197, 179, 88);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
 }
 
 .hero-content-container {
@@ -120,7 +132,7 @@ WELCOME SECTION
 .welcome {
   height: 80vh;
   padding: 0 5rem;
-  background-color: black;
+  background-color: var(--dark-bg-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -130,12 +142,12 @@ WELCOME SECTION
 
 .welcome h1 {
   margin-bottom: 2rem;
-  color: rgb(197, 179, 88);
+  color: var(--primary-color);
   font-size: 3rem;
   font-weight: lighter;
 }
 .welcome p {
-  color: white;
+  color: var(--light-color);
   font-size: 1.5rem;
 }
 
@@ -144,13 +156,13 @@ WELCOME SECTION
   font-weight: lighter;
   padding: 15px 30px;
   margin-top: 2rem;
-  color: white;
+  color: var(--light-color);
   background-color: rgba(0, 0, 0, 0);
-  border: 1px solid rgb(197, 179, 88);
+  border: 1px solid var(--primary-color);
 }
 
 .welcome-btn:hover {
-  color: rgb(197, 179, 88);
+  color: var(--primary-color);
 }
 
 /* ##########
@@ -203,15 +215,15 @@ SERVICES
 
 .services h2 {
   font-size: 2rem;
-  color: rgb(197, 179, 88);
+  color: var(--primary-color);
 }
 
 .services h3 {
-  color: rgb(197, 179, 88);
-  border-bottom: 3px solid white;
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--light-color);
 }
 .services p {
-  color: #ffffff;
+  color: var(--light-color);
 }
 
 /* ###########
@@ -221,7 +233,7 @@ WHY SECTION
 ################ */
 .why-section {
   padding: 2rem;
-  background-color: black;
+  background-color: var(--dark-bg-color);
   height: 100%;
   width: 100%;
 }
@@ -229,7 +241,7 @@ WHY SECTION
 .why-section-header {
   font-size: 2rem;
   margin-bottom: 2rem;
-  color: rgb(197, 179, 88);
+  color: var(--primary-color);
   text-align: center;
 }
 
@@ -243,12 +255,12 @@ WHY SECTION
 
 .why-section p {
   font-size: 0.9rem;
-  color: white;
+  color: var(--light-color);
   margin: 2rem;
 }
 .why-section h4 {
   font-size: 1.5rem;
-  color: rgb(197, 179, 88);
+  color: var(--primary-color);
 }
 
 .why-section-grid-containers {
@@ -258,7 +270,7 @@ WHY SECTION
 
 .why-section-grid-containers i {
   padding-right: 1rem;
-  color: rgb(197, 179, 88);
+  color: var(--primary-color);
 }
 
 .why-section-grid-containers img {
@@ -274,7 +286,7 @@ ACHIEVE CTA DIV
 3############ */
 .achieve-cta {
   height: 120px;
-  background-color: black;
+  background-color: var(--dark-bg-color);
   position: relative;
   text-align: start;
   padding: 0 5rem;
@@ -282,11 +294,11 @@ ACHIEVE CTA DIV
 
 .achieve-cta h2 {
   font-size: 2.5rem;
-  color: rgb(197, 179, 88);
+  color: var(--primary-color);
 }
 
 .achieve-cta p {
-  color: white;
+  color: var(--light-color);
   font-size: 1.2rem;
 }
 
@@ -299,28 +311,28 @@ ACHIEVE CTA DIV
   font-weight: lighter;
   padding: 15px 30px;
 
-  color: rgb(197, 179, 88);
+  color: var(--primary-color);
   background-color: rgba(0, 0, 0, 0);
-  border: 1px solid rgb(197, 179, 88);
+  border: 1px solid var(--primary-color);
 }
 
 .achieve-cta button:hover {
-  color: white;
-  border: 1px solid white;
+  color: var(--light-color);
+  border: 1px solidvar(--light-color);
   background-color: 0, 0, 0, 0.5;
 }
 
 /* FOOTER */
 
 footer {
-  background-color: black;
+  background-color: var(--dark-bg-color);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-footer img {
-}
+/* footer img {
+} */
 
 .footer-ul {
   display: flex;
@@ -328,11 +340,11 @@ footer img {
 }
 
 .footer-ul a {
-  color: white;
+  color: var(--light-color);
 }
 
 .footer-ul a:hover {
-  color: rgb(197, 179, 88);
+  color: var(--primary-color);
 }
 
 .footer-about-us-info {
@@ -340,18 +352,18 @@ footer img {
 }
 
 .footer-about-us-info p {
-  color: white;
+  color: var(--light-color);
 }
 
 .footer-about-us-info i {
-  color: rgb(197, 179, 88);
+  color: var(--primary-color);
 }
 
 .social-media-icons {
   margin: 2rem;
   padding: 2rem;
   cursor: pointer;
-  color: rgb(197, 179, 88);
+  color: var(--primary-color);
 }
 
 .social-media-icons:hover {
