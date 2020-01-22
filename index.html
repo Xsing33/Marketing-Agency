@@ -2,193 +2,195 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap" rel="stylesheet">
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+      integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Boston Marketing Agency</title>
+    <link rel="shortcut Icon" href="images\X.jpg">
+    <title>Xavier Singletary</title>
   </head>
   <body>
-    <!-- /* ############# ############### NAV STYLES ###############
-    ################*/ -->
-    <header>
-      <nav>
-        <ul class="header-nav">
-          <li class="none-img"><a href="#">About Us</a></li>
-          <li class="none-img"><a href="#">Services</a></li>
-
-          <li>
-            <a href="#"><img src="boston-media-logo-sm.png" alt=""/></a>
-          </li>
-          <li class="none-img"><a href="#">Blog</a></li>
-          <li class="none-img"><a href="#">Contact Us</a></li>
+    <div id=home></div>
+    <div class="header">
+    <header class="navbar fixed-top  animated fadeIn">
+      <h1>Xavier</h1>
+    
+       <div class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+       </div>  
+      <nav class="navbar-links">
+        <ul id="navbar">
+          <li><a href="">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="https://docs.google.com/document/d/1KyiwQZu9XVx9RkgYMLfaO7HzAzY-E6ixUORqtRNWfH0/edit?usp=sharing" target="_blank">Resume</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#footer">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <!-- /* ############### ################## HERO SECTION###################### */ -->
-    <section class="hero">
-      <div class="hero-content-container">
-        <h1 class="hero-main-text">Digital Excellence</h1>
-        <p class="hero-sub-text">
-          We are a digital marketing agency that delivers high end strategy
-          through creative works.
-        </p>
-        <button class="hero-btn">Join us today</button>
-      </div>
-    </section>
-    <!-- /* ########### ############# WELCOME SECTION ############ ####################### */ -->
-    <section class="welcome">
-      <h1 class="welcome-main-text">WELCOME TO THE BOSTON MEDIA AGENCY</h1>
-      <p class="welcome-sub-text">
-        The Boston Media Agency is a full service digital marketing agency. We
-        specialize in website development, search engine optimization (SEO), and
-        social media marketing. We are a strategic partner to our clients, and
-        we place your needs at the center of everything we do. We are committed
-        to exceeding your expectations and delivering the highest return for
-        your digital marketing investment. We are the digital marketing agency
-        to achieve your short-term goals of today and execute your long-term
-        goals of tomorrow.
-      </p>
-      <button class="welcome-btn">Request A Quote</button>
-    </section>
+  </div>
+    <!-- 
 
-    <!-- /* ########## ############# SERVICES ############# ############# */ -->
-    <section class="services">
-      <div class="services-header">
-        <h2>DIGITAL MARKETING AGENCY SERVICES</h2>
+ABOUT ME SECTION
+
+
+     -->
+    <section id="about" class=" about animated fadeInLeft"> 
+      
+        <p>
+         Xavier Singletary front end developer based in Atlanta, Georgia.
+          <br />
+          <br>
+      With my passion for learning web developement I bring excitement and energy to the developement process.
+        </p>
+        <a href="#projects" class="btn btn-secondary btn-projects">Projects</a>
+      
+      </section>
+<!-- 
+
+PROJECTS
+
+ -->
+ 
+    <section id="projects">
+      <div class="project-contaier">
+        <img src="images/javascript Calculator.jpg" alt="" />
+        <p class="project-description">JavaScript Calculator</p>
+        <a
+          href="https://github.com/Xsing33/javascript-calculator" target="_blank"
+          class="btn btn-secondary"
+          >Code</a
+        >
+        <a
+          href="https://xsing33.github.io/javascript-calculator/"target="_blank"
+          class="btn btn-secondary"
+          >Hosted Version</a
+        >
+        <ul class="project-skills">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>CSS Grid</li>
+          <li>ES6 JavaScript</li>
+        </ul>
       </div>
-      <div class="services-parent-container">
-        <div class="services-container">
-          <h3>Website Development</h3>
-          <p>
-            The website is the foundation for an online presence. Since this is
-            such a critical piece to your online success it is important to have
-            a website built correctly. In addition to being properly built it
-            needs to be optimized to the fullest extent.
-          </p>
-          <br />
-          <p>
-            All of our websites are fully responsive, built with clean code, and
-            fully optimized. We work with you from start to finish and ensure
-            your site is mobile friendly, easily navigated, and aesthetically
-            pleasing. As a result the finished product will be found by your
-            customers.
-          </p>
-        </div>
-        <div class="services-container">
-          <h3>Search Engine Optimization</h3>
-          <p>
-            For your business to thrive on the internet, you need to be at the
-            top of the search engine results. In today’s internet-driven world
-            it is becoming increasingly difficult to the earn the top spots. The
-            only way to get there is with excellent SEO.
-          </p>
-          <br />
-          <p>
-            Search engine optimization (SEO) is what put us on the map. SEO
-            excites us, and we are really good at it. We know what it takes to
-            build a strong online presence that will generate more leads. Most
-            importantly we stay within your budget.
-          </p>
-        </div>
-        <div class="services-container">
-          <h3>Social Media Marketing</h3>
-          <p>
-            Social media marketing and social media management is the new
-            standard for businesses. Par for the course as they say. A social
-            presence within the relevant social media channels is how you
-            separate yourself from your competition.
-          </p>
-          <br />
-          <p>
-            We provide many options to meet the needs of your individual
-            business. Service offerings include setup, industry specific
-            strategy, optimization, daily or weekly content creation, one-off
-            campaigns, and much more. Connect everywhere, stay relevant.
-          </p>
-        </div>
+      <div class="project-contaier">
+        <img src="images/bostonMedia.png" alt="" />
+        <p class="project-description">Boston Media Marketing-Agency</p>
+        <a
+          href="https://github.com/Xsing33/Marketing-Agency"target="_blank"
+          class="btn btn-secondary"
+          >Code</a
+        >
+        <a
+          href="https://xsing33.github.io/Marketing-Agency/"target="_blank"
+          class="btn btn-secondary"
+          >Hosted Version</a
+        >
+        <ul class="project-skills">
+          <li>HTML</li>
+          <li>CSS</li>
+          
+        </ul>
+      </div>
+      <div class="project-contaier">
+        <img src="images/weatherapp.jpg" alt="" />
+        <p class="project-description">JavaScript Weather app</p>
+        <a
+          href="https://github.com/Xsing33/Weather-App"target="_blank"
+          class="btn btn-secondary"
+          >Code</a
+        >
+        <a
+          href="https://xsing33.github.io/Weather-App/"target="_blank"
+          class="btn btn-secondary"
+          >Hosted Version</a
+        >
+        <ul class="project-skills">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>ES6 JavaScript</li>
+          <li>Weather Api</li>
+        </ul>
+      </div>
+      
+      
+      <div class="project-contaier">
+        <img src="images/watchlanding.jpg" alt="" />
+        <p class="project-description">A Landing page for a watch company.</p>
+        <a
+          href="https://xsing33.github.io/Responsive-landing-page/"target="_blank"
+          class="btn btn-secondary"
+          >Code</a
+        >
+        <a
+          href="https://xsing33.github.io/Responsive-landing-page/"target="_blank"
+          class="btn btn-secondary"
+          >Hosted Version</a
+        >
+        <ul class="project-skills">
+          <li>HTML</li>
+          <li>CSS</li>
+         
+        </ul>
       </div>
     </section>
-    <!-- /* ########### ############## WHY SECTION ############### ################*/ -->
-    <section class="why-section">
-      <div class="why-section-header">
-        <h2>WHY BOSTON MEDIA AGENCY?</h2>
-      </div>
-      <div class="why-section-grid">
-        <div class="why-section-grid-containers">
-          <h4>Full Service Web Program</h4>
-          <p><i class="fas fa-check"></i>Hosting, and maintenance</p>
+    <!-- 
+
+
+FOOTER SECTION
+
+
+     -->
+    <footer id="footer" >
+      <div class="contact animated bounceInLeft">
+        <h3>Contact Me</h3>
+        <form
+        action="https://formspree.io/xgeobjvr"
+        method="POST"
+      >
           <p>
-            <i class="fas fa-check"></i>Daily backups of all files and databases
+            <label>Email</label>
+            <input type="email address" name="name"  rows='5'/>
           </p>
-          <p>
-            <i class="fas fa-check"></i>Eliminate the need for multiple vendors
+
+          <p class="full">
+            <label>Message</label> 
+            <textarea name="message" rows="5"></textarea>
           </p>
-          <p><i class="fas fa-check"></i>We design, develop, and optimize</p>
-          <img src="360-icon.png" alt="" />
-        </div>
-        <div class="why-section-grid-containers">
-          <h4>Excellent Support</h4>
-          <p><i class="fas fa-check"></i>Phone, email, and text support</p>
-          <p><i class="fas fa-check"></i>Available 7 days per week & nights</p>
-          <p><i class="fas fa-check"></i>Support never outsourced</p>
-          <p><i class="fas fa-check"></i>On demand, same day availability</p>
-          <img src="support-icon.png" alt="" />
-        </div>
-        <div class="why-section-grid-containers">
-          <h4>Profitable Results</h4>
-          <p><i class="fas fa-check"></i>On budget, means smart decisions</p>
-          <p><i class="fas fa-check"></i>Effective white-hat techniques</p>
-          <p><i class="fas fa-check"></i>We do it right the first time</p>
-          <p><i class="fas fa-check"></i>Close attention to detail</p>
-          <img src="gold-graph-icon.png" alt="" />
-        </div>
-        <div class="why-section-grid-containers">
-          <h4>100% Transparent</h4>
-          <p><i class="fas fa-check"></i>Clear upfront pricing</p>
-          <p><i class="fas fa-check"></i>Excellent ongoing communication</p>
-          <p>
-            <i class="fas fa-check"></i>Set realistic short & long-term goals
+          <p class="full">
+            <button type="submit">Submit</button>
           </p>
-          <p>
-            <i class="fas fa-check"></i>Regular progress updates, remain on
-            schedule
-          </p>
-          <img src="strategy-icon.png" alt="" />
-        </div>
-      </div>
-    </section>
-    <section class="achieve-cta">
-      <h2>Achieve Your Digital Marketing Goals</h2>
-      <p>
-        Big projects or small projects we are ready to help you deploy your
-        digital marketing strategy
-      </p>
-      <button>Get Started</button>
-    </section>
-    <footer>
-      <img src="boston-media-logo-sm.png" alt="" />
-      <ul class="footer-ul">
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Website Development</a></li>
-        <li><a href="#">Search Engine Optimization</a></li>
-        <li><a href="#">Social Media Marketing</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-      <div class="footer-about-us-info">
-        <p><i class="fas fa-home"></i>21 Mattapan St Boston, MA 02114</p>
-        <p><i class="fas fa-phone"></i>617-648-5555</p>
-        <p><i class="fas fa-envelope"></i>info@BostonWebAgency.com</p>
-      </div>
-      <div class="social-media-icons">
-        <i class="fab fa-facebook-square fa-3x"></i>
-        <i class="fab fa-twitter-square fa-3x"></i>
-        <i class="fab fa-linkedin fa-3x"></i>
+        </form>
       </div>
     </footer>
+  </div>
+  
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+    <script src="js.js"></script>
     <script
-      src="https://kit.fontawesome.com/0d286f0fc8.js"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+   
+
   </body>
 </html>
