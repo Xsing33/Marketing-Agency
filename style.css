@@ -375,7 +375,7 @@ footer {
 MEDIA QUERIES
 ############
 ############ */
-
+/* 
 @media (max-width: 850px) {
   body {
     font-size: 0.5rem;
@@ -428,18 +428,32 @@ MEDIA QUERIES
   footer img {
     display: none;
   }
-}
-@media (max-width: 1024px) {
+} */
+@media (max-width: 1000px) {
   body {
+    width: 100vw;
     font-size: 0.5rem;
+    margin: 1rem auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
   }
 
-  .nav {
-    position: fixed;
-    top: 0;
+  header {
+    height: 8rem;
+    background-color: white;
+    justify-content: center;
+  }
+  a {
+    padding: 0 2rem;
+    font-size: 0.8rem;
+    color: black;
   }
 
+  nav img {
+    display: none;
+  }
   .hero {
+    font-size: 1rem;
     background-attachment: scroll;
     background-size: auto 100%;
     background-position: left top;
@@ -447,10 +461,37 @@ MEDIA QUERIES
 
   .hero-content-container {
     position: relative;
-    justify-content: center;
-    align-content: center;
+    justify-content: flex-start;
+    align-content: flex-start;
     font-size: 1rem;
     color: black;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 2rem;
+    padding: 0 14rem;
+    color: rgb(211, 206, 206);
+  }
+
+  .welcome {
+    padding: 2rem auto;
+  }
+
+  .welcome h1 {
+    font-size: 1.5rem;
+  }
+  .welcome p {
+    font-size: 1.4rem;
+    padding: 0 10rem;
+  }
+
+  .welcome-btn {
+    padding: 7px 15px;
+    font-size: 1rem;
   }
 
   .services {
@@ -458,9 +499,25 @@ MEDIA QUERIES
     background-size: auto 100%;
     background-position: center center;
   }
+
+  .services h2 {
+    padding: 1rem auto;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .services-parent-container {
+    grid-template-columns: 1fr;
+    height: 1rem;
+    margin: 0 auto;
+  }
   .services-container {
-    font-size: 0.9rem;
-    padding: 0.8rem;
+    font-size: 1rem;
+    padding: 0 8rem;
+    height: 300px;
+  }
+  .services p {
+    font-size: ;
   }
 
   .achieve-cta {
@@ -469,15 +526,41 @@ MEDIA QUERIES
     justify-content: center;
     align-content: center;
   }
-  .achieve-cta button {
+
+  .why-section-header {
+    margin: 5rem auto;
+  }
+
+  .why-section p {
+    margin: 0.2rem 1rem;
+  }
+  .why-section i {
+    margin: 1rem;
+  }
+
+  .why-section-header {
+    font-size: 1rem;
+  }
+
+  .why-section-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .achieve-cta {
     display: none;
   }
 
   footer {
+    padding: 1rem auto;
     font-size: 1rem;
-    justify-content: space-between;
+    flex-direction: column;
   }
-
+  .footer-ul a {
+    padding: 1rem;
+  }
+  footer > * {
+    margin: 1rem;
+  }
   footer img {
     display: none;
   }
